@@ -21,6 +21,7 @@ header {
     background: linear-gradient(135deg, #3aff20, #ffffff);
     color: #000000;
     padding: 25px 25px;
+    position: relative; /* VIGTIGT for burger */
 }
 
 header h1 {
@@ -28,6 +29,21 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* ===== BURGER-KNAP (NY) ===== */
+.menu-toggle {
+    display: none; /* skjult på desktop */
+    background: none;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+/* NAV – desktop */
 nav {
     display: flex;
     gap: 20px;
@@ -46,6 +62,39 @@ nav a {
 nav a:hover {
     color: #fff;
     border-bottom: 2px solid #ffffff;
+}
+
+
+/* ============================= */
+/* MOBIL – BURGER MENU           */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Vis burger-ikon */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Skjul menu som standard */
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    /* Når menu er åben */
+    nav.open {
+        display: flex;
+    }
+
+    /* Links i dropdown */
+    nav a {
+        padding: 6px 0;
+        border-bottom: none;
+    }
 }
 
 /* ============================= */
@@ -401,4 +450,5 @@ footer {
     nav {
         gap: 10px;
     }
+
 }
