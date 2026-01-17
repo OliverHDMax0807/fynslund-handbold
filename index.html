@@ -12,7 +12,6 @@
 <header class="site-header">
     <h1>Fynslund Boldklub – Håndbold</h1>
 
-    <!-- Burger-knap (kun mobil) -->
     <button class="menu-toggle" aria-label="Åbn menu">
         ☰
     </button>
@@ -25,11 +24,11 @@
         <a href="#serie3-kvinder">Serie 3 Kvinder</a>
         <a href="#traeningstider">Træningstider</a>
         <a href="#stillinger">Stillinger</a>
-        <a href="#spillertrupper">Spillertrupper & Trænere</a>
+        <a href="#spillertrupper">Spillertrupper</a>
         <a href="#links">Links</a>
     </nav>
 </header>
-
+    
 <section class="hero">
     <h2>Velkommen til Fynslund BK Håndbold</h2>
     <p>Kampprogrammer · Træningstider · Stillinger · Spillertrupper</p>
@@ -1210,29 +1209,23 @@
 </section>
     
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".top-nav");
 
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.top-nav');
-
-    if (!menuToggle || !nav) {
-        console.log('Burger menu: elementer mangler');
-        return;
-    }
-
-    menuToggle.addEventListener('click', function () {
-        nav.classList.toggle('open');
-        console.log('Burger klik – open:', nav.classList.contains('open'));
+    btn.addEventListener("click", function () {
+        nav.classList.toggle("open");
     });
-
 });
 </script>
+    
 </body>
 
 <footer>
     <p>© Fynslund Boldklub – Håndbold</p>
 
 </footer>
+
 
 
 
