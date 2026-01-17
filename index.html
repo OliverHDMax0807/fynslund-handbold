@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="FBHåndbold.dk.css">
     <link rel="icon" href="Fynslund BK.png">
 </head>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+    });
+</script>
+
 <body>
 
 <header class="site-header">
@@ -1213,6 +1223,7 @@
     <p>© Fynslund Boldklub – Håndbold</p>
 
 </footer>
+
 
 
 
