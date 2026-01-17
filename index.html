@@ -17,15 +17,15 @@
     </button>
 
     <nav class="top-nav">
-        <a href="#serie1-herre">Serie 1 Herre</a>
-        <a href="#serie3-herre">Serie 3 Herre</a>
-        <a href="#serie3b-herre">Serie 3 Herre 2</a>
-        <a href="#serie2-kvinder">Serie 2 Kvinder</a>
-        <a href="#serie3-kvinder">Serie 3 Kvinder</a>
-        <a href="#traeningstider">Træningstider</a>
-        <a href="#stillinger">Stillinger</a>
-        <a href="#spillertrupper">Spillertrupper</a>
-        <a href="#links">Links</a>
+        <a href="#serie1">Serie 1 Herre</a>
+<a href="#serie3">Serie 3 Herre</a>
+<a href="#serie3b">Serie 3 Herre 2</a>
+<a href="#serie2k">Serie 2 Kvinder</a>
+<a href="#serie3k">Serie 3 Kvinder</a>
+<a href="#traeningstider">Træningstider</a>
+<a href="#stillinger">Stillinger</a>
+<a href="#spillertrupper">Spillertrupper</a>
+<a href="#links">Links</a>
     </nav>
 </header>
     
@@ -1216,6 +1216,13 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function () {
         nav.classList.toggle("open");
     });
+
+    // Luk menu når man klikker på et link
+    document.querySelectorAll(".top-nav a").forEach(link => {
+        link.addEventListener("click", function () {
+            nav.classList.remove("open");
+        });
+    });
 });
 </script>
     
@@ -1225,6 +1232,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <p>© Fynslund Boldklub – Håndbold</p>
 
 </footer>
+
 
 
 
