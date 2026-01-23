@@ -161,11 +161,11 @@ body {
 }
 
 .fixture.home {
-    border-left: 12px solid #00ff15;
+    border-left: 20px solid #00ff15;
 }
 
 .fixture.away {
-    border-left: 12px solid #00f7ff;
+    border-left: 20px solid #00f7ff;
 }
 
 .fixture-date {
@@ -512,3 +512,4 @@ footer {
         right: 20px;
     }
 }
+
