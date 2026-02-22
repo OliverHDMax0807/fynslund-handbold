@@ -1,6 +1,3 @@
-/* ============================= */
-/* RESET + BASIS                 */
-/* ============================= */
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* ============================= */
-/* HEADER                        */
-/* ============================= */
 .site-header {
     position: relative;
     background: linear-gradient(135deg, #3aff20, #ffffff);
@@ -29,9 +23,6 @@ body {
     color: #000;
 }
 
-/* ============================= */
-/* NAVIGATION (DESKTOP)          */
-/* ============================= */
 .top-nav {
     display: flex;
     gap: 18px;
@@ -52,9 +43,6 @@ body {
     border-bottom: 2px solid #000;
 }
 
-/* ============================= */
-/* BURGER BUTTON                 */
-/* ============================= */
 .menu-toggle {
     display: none;
     position: absolute;
@@ -67,17 +55,11 @@ body {
     z-index: 1001;
 }
 
-/* ============================= */
-/* MOBIL NAV                     */
-/* ============================= */
 @media (max-width: 768px) {
 
-    /* Burger vises */
     .menu-toggle {
         display: block;
     }
-
-    /* Skjul menu som standard */
     .top-nav {
         display: none;
         position: absolute;
@@ -92,15 +74,82 @@ body {
         z-index: 1000;
     }
 
-    /* Når menu er åben */
     .top-nav.open {
         display: flex;
     }
 }
 
-/* ============================= */
-/* HERO                          */
-/* ============================= */
+.sponsor-thanks-bar {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 2rem;
+    padding: 22px 12px;
+    text-transform: uppercase;
+    color: #1e7f1e;
+}
+
+.sponsor-ticker {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    padding: 18px 0;
+}
+
+.ticker-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 4rem;
+    width: max-content;
+    animation: ticker-scroll 75s linear infinite;
+}
+
+.sponsor-logo {
+    width: 150px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.sponsor-logo span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.2;
+    margin-top: 6px;
+    min-height: 2.4em;
+    white-space: normal;
+    overflow: hidden;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.sponsor-ticker:hover .ticker-track {
+    animation-play-state: paused;
+}
+
 .hero {
     background: url("FBHB.jpg") center/cover no-repeat;
     padding: 80px 20px;
@@ -118,9 +167,6 @@ body {
     opacity: 0.9;
 }
 
-/* ============================= */
-/* GENEREL SECTION               */
-/* ============================= */
 .section {
     max-width: 1100px;
     margin: 50px auto;
@@ -135,9 +181,6 @@ body {
     padding-left: 12px;
 }
 
-/* ============================= */
-/* KAMPE (FIXTURES)              */
-/* ============================= */
 .fixtures-pro {
     display: flex;
     flex-direction: column;
@@ -208,10 +251,6 @@ body {
     color: #9ca3af;
 }
 
-/* ============================= */
-/* RESULTATER                    */
-/* ============================= */
-
 .fixture-result {
     text-align: center;
     font-weight: bold;
@@ -233,10 +272,6 @@ body {
 .fixture-result.draw {
     color: #ffb43a;
 }
-
-/* ============================= */
-/* TRÆNINGSTIDER                 */
-/* ============================= */
 
 .training-cards {
     display: flex;
@@ -271,8 +306,6 @@ body {
     color: #666;
 }
 
-/* ================= STILLINGER GRID ================= */
-
 .standings-grid {
     display: grid;
     gap: 2px;
@@ -286,13 +319,13 @@ body {
     grid-template-columns:
         40px        /* # */
         1fr         /* Hold */
-        55px        /* K */
-        55px        /* V */
-        55px        /* U */
-        55px        /* T */
-        80px        /* Mål (BREDERE) */
+        55px        /* Kampe */
+        55px        /* Vundet */
+        55px        /* Uafgjort */
+        55px        /* Tabte */
+        80px        /* Mål */
         55px        /* +/- */
-        55px;       /* P */
+        55px;       /* Point */
 }
 
 .grid-header div,
@@ -319,13 +352,11 @@ body {
     background: #ffffff;
 }
 
-/* Fremhæv Fynslund */
 .grid-row.fynslund div {
     background: #33ff00;
     font-weight: 600;
 }
 
-/* Mobil */
 @media (max-width: 700px) {
     .grid-header,
     .grid-row {
@@ -339,9 +370,6 @@ body {
     }
 }
 
-/* ============================= */
-/* SPILLERTRUP                   */
-/* ============================= */
 .team-card {
     background: #00ff15;
     border: 1px solid #333;
@@ -376,10 +404,6 @@ body {
     font-size: 14px;
 }
 
-/* ============================= */
-/* MONTH DIVIDER (KAMPPROGRAM)   */
-/* ============================= */
-
 .month-divider {
     margin: 60px 0 25px;
     padding-left: 14px;
@@ -389,17 +413,12 @@ body {
     color: #ffffff;
 }
 
-/* Gør afstand pæn på mobil */
 @media (max-width: 768px) {
     .month-divider {
         font-size: 1.4rem;
         margin: 40px 0 20px;
     }
 }
-
-/* ============================= */
-/* LINKS                         */
-/* ============================= */
 
 .links-cards {
     display: flex;
@@ -448,9 +467,6 @@ body {
     margin-left: 4px;
 }
 
-/* ============================= */
-/* FOOTER                        */
-/* ============================= */
 footer {
     background: #000000;
     color: #1eff00aa;
@@ -459,9 +475,6 @@ footer {
     margin-top: 60px;
 }
 
-/* ============================= */
-/* RESPONSIV                     */
-/* ============================= */
 @media (max-width: 768px) {
     .fixture {
         grid-template-columns: 1fr;
@@ -474,10 +487,6 @@ footer {
     }
 
 }
-
-/* ============================= */
-/* RUL TIL TOPPEN-KNAP           */
-/* ============================= */
 
 #scrollToTop {
     position: fixed;
@@ -502,7 +511,6 @@ footer {
     transform: translateY(-4px);
 }
 
-/* Lidt mindre på mobil */
 @media (max-width: 768px) {
     #scrollToTop {
         width: 46px;
@@ -512,4 +520,3 @@ footer {
         right: 20px;
     }
 }
-
