@@ -317,15 +317,15 @@ body {
 .grid-row {
     display: grid;
     grid-template-columns:
-        40px        /* # */
-        1fr         /* Hold */
-        55px        /* Kampe */
-        55px        /* Vundet */
-        55px        /* Uafgjort */
-        55px        /* Tabte */
-        80px        /* Mål */
-        55px        /* +/- */
-        55px;       /* Point */
+        40px
+        1fr
+        55px
+        55px
+        55px
+        55px
+        80px
+        55px
+        55px;
 }
 
 .grid-header div,
@@ -354,7 +354,7 @@ body {
 
 .grid-row.fynslund div {
     background: #33ff00;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 @media (max-width: 700px) {
