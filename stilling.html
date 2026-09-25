@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Stillinger for Fynslund BK Håndbold. Se placeringer, kampe, målscore, målforskel og point for klubbens hold."
+  >
+
+  <title>Stillinger | Fynslund BK Håndbold</title>
+
+  <!-- CSS til stillingssiden -->
+  <link rel="stylesheet" href="stilling.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo/fynslund.png">
+
+  <!-- JavaScript til automatisk opbygning af stillingerne -->
+  <script src="stilling.js" defer></script>
+</head>
+
+<body id="top">
+
+  <a class="skip-link" href="#stillinger">
+    Spring til stillinger
+  </a>
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="Gå til Fynslund BK Håndbolds forside"
+      >
+        <img
+          src="images/logo/fynslund.png"
+          alt="Fynslund BK"
+        >
+
+        <span class="brand-text">
+          <small>Fynslund Boldklub</small>
+          <strong>Håndbold</strong>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Åbn menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Hovedmenu">
+        <a href="index.html">Forside</a>
+        <a href="#stillinger">Stillinger</a>
+        <a href="#forklaring">Forklaring</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="standings-hero">
+
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-inner">
+
+        <div class="hero-copy">
+
+          <div class="breadcrumb">
+            <a href="index.html">Fynslund Håndbold</a>
+            <span>/</span>
+            <strong>Stillinger</strong>
+          </div>
+
+          <span class="eyebrow">Sæson 2026</span>
+
+          <h1>
+            Stillinger
+          </h1>
+
+          <p>
+            Her samles stillingerne for Fynslund BK Håndbolds hold.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#stillinger">
+              Se stillinger
+            </a>
+
+            <a class="button button-secondary" href="index.html">
+              Til forsiden
+            </a>
+          </div>
+
+        </div>
+
+
+        <aside class="standings-card" aria-label="Sideinformation">
+
+          <span class="identity-label">Fynslund BK</span>
+
+          <div class="identity-logo">
+            <img
+              src="images/logo/fynslund.png"
+              alt="Fynslund BK logo"
+            >
+          </div>
+
+          <p>Overblik</p>
+          <h2>Stillinger</h2>
+          <span class="identity-season">2026</span>
+
+          <div class="identity-line"></div>
+
+          <small>
+            Placering · Målscore · Point
+          </small>
+
+        </aside>
+
+      </div>
+    </section>
+
+
+    <section
+      class="standings-section"
+      id="stillinger"
+      aria-labelledby="standings-title"
+    >
+
+      <div class="section-shell">
+
+        <header class="section-heading">
+
+          <div>
+            <span class="eyebrow eyebrow-dark">
+              Puljeoverblik
+            </span>
+
+            <h2 id="standings-title">
+              Aktuelle stillinger
+            </h2>
+          </div>
+
+          <div class="standings-count" aria-live="polite">
+            <strong id="standingsCount">0</strong>
+            <span>rækker</span>
+          </div>
+
+        </header>
+
+
+        <!--
+          JavaScript placerer stillingerne her.
+
+          Den færdige struktur bliver:
+          <article class="standings-board">
+            <header>...</header>
+            <div class="standings-grid">...</div>
+          </article>
+        -->
+        <div
+          class="standings-list"
+          id="standingsList"
+          data-standings-app
+        ></div>
+
+
+        <noscript>
+          <div class="standings-noscript">
+            <h3>JavaScript er slået fra</h3>
+            <p>
+              Stillingerne kræver JavaScript, fordi tabellerne bygges
+              automatisk ud fra datafeltet i HTML-koden.
+            </p>
+          </div>
+        </noscript>
+
+      </div>
+    </section>
+
+
+    <section
+      class="standings-help-section"
+      id="forklaring"
+      aria-labelledby="help-title"
+    >
+
+      <div class="section-shell">
+
+        <header class="section-heading">
+          <div>
+            <span class="eyebrow eyebrow-dark">
+              Læs Tabellerne
+            </span>
+
+            <h2 id="help-title">
+              Sådan læses tabellen
+            </h2>
+
+            <p>
+              Kolonnerne følger den klassiske håndboldstilling:
+              kampe, sejre, uafgjorte, nederlag, målscore,
+              målforskel og point.
+            </p>
+          </div>
+        </header>
+
+        <div class="standings-explainer-grid">
+
+          <article>
+            <strong>K</strong>
+            <span>Kampe</span>
+          </article>
+
+          <article>
+            <strong>V</strong>
+            <span>Sejre</span>
+          </article>
+
+          <article>
+            <strong>U</strong>
+            <span>Uafgjorte</span>
+          </article>
+
+          <article>
+            <strong>T</strong>
+            <span>Nederlag</span>
+          </article>
+
+          <article>
+            <strong>Mål</strong>
+            <span>Målscore</span>
+          </article>
+
+          <article>
+            <strong>+/-</strong>
+            <span>Målforskel</span>
+          </article>
+
+          <article>
+            <strong>P</strong>
+            <span>Point</span>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <a href="index.html" class="footer-brand">
+        <img
+          src="images/logo/fynslund.png"
+          alt="Fynslund Logo"
+        >
+
+        <span>
+          <strong>Fynslund BK Håndbold</strong>
+          <small>Stillinger · Sæson 2026</small>
+        </span>
+      </a>
+
+      <a href="#top" class="back-to-top">
+        ↑ Rul til toppen
+      </a>
+
+    </div>
+
+  </footer>
+
+ <script type="application/json" id="standings-data">
+  {
+    "competitions": [
+      {
+        "id": "serie-2-herre",
+        "title": "Serie 2 Herre",
+        "subtitle": "Herresenior · Sæson 2026",
+        "note": "De øvrige hold tilføjes, når puljen er offentliggjort.",
+        "teams": [
+          {
+            "rank": 1,
+            "name": "Ammitsbøl/Egtved",
+            "shortName": "Ammisbøl/Egtved",
+            "logo": "images/logo/ammitsbol.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 2,
+            "name": "Erritsø G&IF",
+            "shortName": "Erritsø",
+            "logo": "images/logo/erritso.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 3,
+            "name": "Fynslund BK",
+            "shortName": "Fynslund",
+            "logo": "images/logo/fynslund.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": true
+          },
+          {
+            "rank": 4,
+            "name": "Gauerslund HK",
+            "shortName": "Gauerslund",
+            "logo": "images/logo/gauerslund.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 5,
+            "name": "Søndermarken Vejle HK",
+            "shortName": "SVHK",
+            "logo": "images/logo/sondermarken.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 6,
+            "name": "Vejle HK",
+            "shortName": "Vejle HK",
+            "logo": "images/logo/vejle.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "id": "serie-3-herre",
+        "title": "Serie 3 Herre",
+        "subtitle": "Herresenior · Sæson 2026",
+        "note": "De øvrige hold tilføjes, når puljen er offentliggjort.",
+        "teams": [
+          {
+            "rank": 1,
+            "name": "Andst U & IF",
+            "shortName": "Andst",
+            "logo": "images/logo/andst.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 2,
+            "name": "Fynslund BK",
+            "shortName": "Fynslund",
+            "logo": "images/logo/fynslund.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": true
+          },
+          {
+            "rank": 3,
+            "name": "Give HK",
+            "shortName": "Give",
+            "logo": "images/logo/give.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 4,
+            "name": "Hover IF",
+            "shortName": "Hover",
+            "logo": "images/logo/hover.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 5,
+            "name": "Kolding KFUM",
+            "shortName": "Kolding",
+            "logo": "images/logo/koldingkfum.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "id": "serie-3-herre-2",
+        "title": "Serie 3 Herre 2",
+        "subtitle": "Herresenior · Sæson 2026",
+        "note": "De øvrige hold tilføjes, når puljen er offentliggjort.",
+        "teams": [
+          {
+            "rank": 1,
+            "name": "Fynslund BK",
+            "shortName": "Fynslund BK",
+            "logo": "images/logo/fynslund.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": true
+          },
+          {
+            "rank": 2,
+            "name": "Gram IF",
+            "shortName": "Gram",
+            "logo": "images/logo/gram.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 3,
+            "name": "Over Jerstal HK",
+            "shortName": "Over Jerstal",
+            "logo": "images/logo/overjerstal.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 4,
+            "name": "Rødding IF",
+            "shortName": "Rødding",
+            "logo": "images/logo/rodding.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 5,
+            "name": "Vojens HF",
+            "shortName": "Vojens",
+            "logo": "images/logo/vojens.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "id": "serie-1-kvinder",
+        "title": "Serie 1 Kvinder",
+        "subtitle": "Kvinder · Sæson 2026",
+        "note": "De øvrige hold tilføjes, når puljen er offentliggjort.",
+        "teams": [
+          {
+            "rank": 1,
+            "name": "Ammistbøl/Egtved",
+            "shortName": "Ammitsbøl/Egtved",
+            "logo": "images/logo/ammitsbol.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 2,
+            "name": "Fredericia HK",
+            "shortName": "Fredericia",
+            "logo": "images/logo/fredericia.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 3,
+            "name": "Fynslund BK",
+            "shortName": "Fynslund",
+            "logo": "images/logo/fynslund.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": true
+          },
+          {
+            "rank": 4,
+            "name": "Kolding KFUM",
+            "shortName": "Kolding KFUM",
+            "logo": "images/logo/koldingkfum.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 5,
+            "name": "Vamdrup IF",
+            "shortName": "Vamdrup",
+            "logo": "images/logo/vamdrup.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 6,
+            "name": "Vejle HK",
+            "shortName": "Vejle",
+            "logo": "images/logo/vejle.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "id": "serie-3-kvinder",
+        "title": "Serie 3 Kvinder",
+        "subtitle": "Kvinder · Sæson 2026",
+        "note": "De øvrige hold tilføjes, når puljen er offentliggjort.",
+        "teams": [
+          {
+            "rank": 1,
+            "name": "Andst U & IF",
+            "shortName": "Andst",
+            "logo": "images/logo/andst.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 2,
+            "name": "Folding-Brørup HK",
+            "shortName": "Folding-Brørup",
+            "logo": "images/logo/foldingbrorup.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 3,
+            "name": "Fynslund BK",
+            "shortName": "Fynslund",
+            "logo": "images/logo/fynslund.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": true
+          },
+          {
+            "rank": 4,
+            "name": "Hammelev SUF",
+            "shortName": "Hammelev",
+            "logo": "images/logo/hammelev.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 5,
+            "name": "Hoptrup-Marstrup IF",
+            "shortName": "Hoptrup-Marstrup",
+            "logo": "images/logo/hoptrup.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          },
+          {
+            "rank": 6,
+            "name": "Vamdrup IF",
+            "shortName": "Vamdrup",
+            "logo": "images/logo/vamdrup.png",
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "pointsOverride": null,
+            "highlight": false
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+
+  <!--
+    =========================================================
+    SKABELON TIL ÉN STILLINGSRÆKKE
+    =========================================================
+
+    Denne template bruger JavaScript.
+    Du skal ikke ændre den efter hver kamp.
+  -->
+
+  <template id="standings-row-template">
+    <div class="standings-row">
+
+      <div class="standings-rank" data-cell="rank"></div>
+
+      <div class="standings-team" data-cell="team">
+        <img
+          src=""
+          alt=""
+          loading="lazy"
+          decoding="async"
+        >
+
+        <span data-cell="team-name"></span>
+      </div>
+
+      <div data-cell="played"></div>
+      <div data-cell="wins"></div>
+      <div data-cell="draws"></div>
+      <div data-cell="losses"></div>
+      <div data-cell="goals"></div>
+      <div data-cell="difference"></div>
+      <div data-cell="points"></div>
+
+    </div>
+  </template>
+
+
+  <!--
+    =========================================================
+    EKSEMPEL PÅ NYT HOLD
+    =========================================================
+
+    Kopiér dette ind i "teams": [ ... ],
+    når du kender et nyt hold.
+
+    Husk komma mellem holdene.
+
+    {
+      "rank": 2,
+      "name": "Modstander IF",
+      "shortName": "Modstander",
+      "logo": "images/logo/modstander.png",
+      "played": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "pointsOverride": null,
+      "highlight": false
+    }
+  -->
+
+</body>
+</html>
