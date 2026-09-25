@@ -4,42 +4,633 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Fynslund BK Håndbold · Siden opdateres</title>
-
-  <link rel="stylesheet" href="vedligeholdelse.css">
-  <link rel="icon" href="Fynslund BK.png">
+  <meta name="description" content="Fynslund Boldklubs håndboldside med hold, kampe, hjemmekampe og sponsorer.">
+  <title>Fynslund BK Håndbold</title>
+  <link rel="stylesheet" href="fynslundhandbold.css">
+  <link rel="icon" href="images/logo/fynslund.png">
 </head>
 
-<body>
-  <main class="maintenance-page">
-    <section class="maintenance-card" aria-labelledby="maintenance-title">
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Fynslund BK Håndbold – forside">
+        <img src="images/logo/fynslund.png" alt="Fynslund Boldklubs logo">
+        <span class="brand-text">
+          <small>Fynslund Boldklub</small>
+          <strong>Håndbold</strong>
+        </span>
+      </a>
 
-      <div class="club-mark" aria-hidden="true">
-        <img src="Fynslund BK.png" alt="">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Åbn menu</span>
+      </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Hovedmenu">
+        <a href="#hold">Hold</a>
+        <a href="#hjemmekampe">Hjemmekampe</a>
+        <a href="#naeste-kampe">Næste kampe</a>
+        <a href="#sponsorer">Sponsorer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="eyebrow">Fynslund BK · Håndbold</span>
+          <h1 id="hero-title">Sammen om håndbolden</h1>
+          <p>
+            Hold, kampe, resultater og klubinformation samlet på ét sted.
+            Følg Fynslund BK gennem sæsonen og find hurtigt det hold eller den kamp, du leder efter.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#hold">Find dit hold</a>
+            <a class="button button-secondary" href="#naeste-kampe">Se næste kampe</a>
+          </div>
+
+          <div class="hero-highlights" aria-label="Kluboversigt">
+            <span><strong>5</strong> seniorhold</span>
+            <span><strong>1</strong> fælles klub</span>
+            <span><strong>2026</strong> sæson</span>
+          </div>
+        </div>
+
+        <aside class="hero-club-card" aria-label="Fynslund BK">
+          <span class="hero-club-card-label">Klubben</span>
+          <div class="hero-logo-wrap">
+            <img src="images/logo/fynslund.png" alt="Fynslund BK">
+          </div>
+          <h2>Fynslund BK</h2>
+          <p>Håndbold, fællesskab og lokale oplevelser</p>
+          <div class="hero-card-line"></div>
+          <span class="hero-card-season">Sæson 2025/2026</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sponsor-section" id="sponsorer" aria-labelledby="sponsor-heading">
+      <div class="section-heading section-heading-dark">
+        <span class="eyebrow">Lokalt engagement</span>
+        <h2 id="sponsor-heading">Tak til vores sponsorer</h2>
+        <p>Deres støtte er med til at skabe rammerne for håndbolden i Fynslund.</p>
       </div>
 
-      <p class="eyebrow">Fynslund BK Håndbold</p>
-
-      <h1 id="maintenance-title">
-        Siden opdateres
-      </h1>
-
-      <p class="lead">
-        Vi er i gang med at opdatere kampprogrammer, stillinger og holdinformation.
-        Hav venligst tålmodighed.
-      </p>
-
-      <div class="status-box">
-        <span class="status-dot"></span>
-        <span>Opdatering i gang</span>
+      <div class="sponsor-ticker" aria-label="Fynslund BK sponsorer">
+        <div class="ticker-track">
+          <div class="ticker-group">
+<a class="sponsor-logo" href="http://www.smededal.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Smededal v/Per Vejen-Jensen" src="images/sponsors/Smededal.jfif"/>
+<span>Smededal</span>
+</a>
+<a class="sponsor-logo" href="https://smedeogmontage.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Smede og Montagefirma v/René Hviid, Lejrskov" src="images/sponsors/Smede og montage.PNG"/>
+<span>Smede og Montagefirma v/René Hviid</span>
+</a>
+<a class="sponsor-logo" href="https://www.bygogmontage.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Byg Og Montage v/Hans Nautrup" src="images/sponsors/Byg og montage.jpg"/>
+<span>Byg Og Montage v/Hans Nautrup</span>
+</a>
+<a class="sponsor-logo" href="https://www.facebook.com/MalermesterMortenHinrichsen/?locale=da_DK" rel="noopener noreferrer" target="_blank">
+<img alt="Malermester Morten Hinrichsen" src="images/sponsors/Malermester Morten Hinrichsen.png"/>
+<span>Malermester Morten Hinrichsen</span>
+</a>
+<div class="sponsor-logo">
+<img alt="Bønderne i Vrå" src="images/sponsors/Boenderne i Vraa.PNG"/>
+<span>Bønderne i Vrå</span>
+</div>
+<a class="sponsor-logo" href="https://ditlevsen-biler.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Ditlevsen Biler" src="images/sponsors/Ditlevsen Biler.png"/>
+<span>Ditlevsen Biler</span>
+</a>
+<div class="sponsor-logo">
+<img alt="MATZEN Anlæg" src="images/sponsors/Matzen Anlaeg.jpg"/>
+<span>MATZEN Anlæg</span>
+</div>
+<a class="sponsor-logo" href="https://kdbyg.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="KD Byg" src="images/sponsors/KDbyg.png"/>
+<span>KD Byg</span>
+</a>
+<a class="sponsor-logo" href="https://ecm.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="ECM Industries" src="images/sponsors/ECM Industries.jpg"/>
+<span>ECM Industries</span>
+</a>
+<a class="sponsor-logo" href="https://norva24.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="NORVA24" src="images/sponsors/Norva24.png"/>
+<span>NORVA24</span>
+</a>
+<a class="sponsor-logo" href="https://www.lykkesguld.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Lykkes Guld og Sølv" src="images/sponsors/Lykkes guld og soelv.png"/>
+<span>Lykkes Guld og Sølv</span>
+</a>
+<a class="sponsor-logo" href="https://martinsen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Martinsen, Rådgivning og Revision" src="images/sponsors/Martinsen Raadgivning.png"/>
+<span>Martinsen, Rådgivning og Revision</span>
+</a>
+<a class="sponsor-logo" href="https://ss-el.eu/" rel="noopener noreferrer" target="_blank">
+<img alt="Smedemark &amp; Sørensen El" src="images/sponsors/Smedemark og Soerensen.png"/>
+<span>Smedemark &amp; Sørensen El</span>
+</a>
+<a class="sponsor-logo" href="https://vagn-poulsen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Malerfirmaet Vagn Poulsen" src="images/sponsors/Malerfirmaet Vagn Poulsen.webp"/>
+<span>Malerfirmaet Vagn Poulsen</span>
+</a>
+<a class="sponsor-logo" href="https://og-special.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Øster Gesten Special" src="images/sponsors/Oester Gesten.jpg"/>
+<span>Øster Gesten Special</span>
+</a>
+<a class="sponsor-logo" href="https://doxx.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="DOXX Hundecenter" src="images/sponsors/Doxx Hundecenter.png"/>
+<span>DOXX Hundecenter</span>
+</a>
+<a class="sponsor-logo" href="https://www.lejrskov-jordrupkirker.dk/menighedsraadet" rel="noopener noreferrer" target="_blank">
+<img alt="Lejrskov-Jordrup Menighedsråd" src="images/sponsors/Menighedsraad.jpg"/>
+<span>Lejrskov-Jordrup Menighedsråd</span>
+</a>
+<a class="sponsor-logo" href="https://www.svendarndal.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Svend Arndal Tømrerfirma" src="images/sponsors/Svend Arndal.png"/>
+<span>Svend Arndal Tømrerfirma</span>
+</a>
+<a class="sponsor-logo" href="https://www.bravida.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Bravida" src="images/sponsors/Bravida.png"/>
+<span>Bravida</span>
+</a>
+<a class="sponsor-logo" href="https://www.ok.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="OK" src="images/sponsors/OK.jpg"/>
+<span>OK</span>
+</a>
+<a class="sponsor-logo" href="https://srteknik.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="SR Teknik" src="images/sponsors/SR Teknik.jpg"/>
+<span>SR Teknik</span>
+</a>
+<a class="sponsor-logo" href="https://www.jenshpedersen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Vognmandsforretning Jens H. Pedersen og Søn" src="images/sponsors/Jens H. Pedersen.png"/>
+<span>Vognmandsforretning Jens H. Pedersen og Søn</span>
+</a>
+<a class="sponsor-logo" href="https://bryggeriet-vestfyen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="A/S Bryggeriet Vestfyen" src="images/sponsors/Bryggeriet Vestfyn.jpg"/>
+<span>A/S Bryggeriet Vestfyen</span>
+</a>
+<a class="sponsor-logo" href="https://jh-maskinteknik.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="JH Maskinteknik" src="images/sponsors/JH Maskinteknik.png"/>
+<span>JH Maskinteknik</span>
+</a>
+<a class="sponsor-logo" href="https://www.hchristiansen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="El-installatør Henning Christiansen" src="images/sponsors/H. Christiansen.webp"/>
+<span>El-installatør Henning Christiansen</span>
+</a>
+<a class="sponsor-logo" href="https://www.xn--allefddersven-fnb.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Alle Fødders Ven" src="images/sponsors/Alle Foedders Ven.jpg"/>
+<span>Alle Fødders Ven</span>
+</a>
+<a class="sponsor-logo" href="https://seosoft.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="SeoSoft" src="images/sponsors/Seosoft.jpg"/>
+<span>SeoSoft</span>
+</a>
+<a class="sponsor-logo" href="https://regnskabogco.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Regnskab og Co." src="images/sponsors/Regnskab og co.jfif"/>
+<span>Regnskab og Co.</span>
+</a>
+<a class="sponsor-logo" href="https://www.xn--gk-tmrer-84a.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="GK-Tømrer v/Gunner Knudsen" src="images/sponsors/GK Toemrer.jpg"/>
+<span>GK-Tømrer v/Gunner Knudsen</span>
+</a>
+<a class="sponsor-logo" href="https://www.combitools.dk/da/" rel="noopener noreferrer" target="_blank">
+<img alt="Combi Tools" src="images/sponsors/Combi Tools.png"/>
+<span>Combi Tools</span>
+</a>
+<a class="sponsor-logo" href="https://us-design.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="US Design" src="images/sponsors/US Design.png"/>
+<span>US Design</span>
+</a>
+<a class="sponsor-logo" href="https://brahms-smeden.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Brahms-Smeden" src="images/sponsors/Brahms Smeden.png"/>
+<span>Brahms-Smeden</span>
+</a>
+<a class="sponsor-logo" href="https://koldinggaardbryggeri.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Kolding Gårdbryggeri" src="images/sponsors/Kolding Gaardbryggeri.jpg"/>
+<span>Kolding Gårdbryggeri</span>
+</a>
+<a class="sponsor-logo" href="https://aogh.net/" rel="noopener noreferrer" target="_blank">
+<img alt="Andersen og Heegaard" src="images/sponsors/Andersen &amp; Heegaard.jpg"/>
+<span>Andersen og Heegaard</span>
+</a>
+<div class="sponsor-logo">
+<img alt="Lokale Landmænd" src="images/sponsors/Lokale Landmaend.PNG"/>
+<span>Lokale Landmænd</span>
+</div>
+<a class="sponsor-logo" href="https://www.presencosport.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Presenco Sport" src="images/sponsors/Presenco Sport.jpg"/>
+<span>Presenco Sport</span>
+</a>
+<a class="sponsor-logo" href="https://www.facebook.com/p/Borlev-Auto-Teknik-61564027601106/" rel="noopener noreferrer" target="_blank">
+<img alt="Presenco Sport" src="images/sponsors/Borlev Auto Teknik.PNG"/>
+<span>Borlev Auto Teknik</span>
+</a>
+<a class="sponsor-logo" href="https://www.sparnord.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Spar Nord" src="images/sponsors/Spar Nord.png"/>
+<span>Spar Nord</span>
+</a>
+<a class="sponsor-logo" href="https://www.byravn.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="ByRavn" src="images/sponsors/ByRavn.png"/>
+<span>byRavn</span>
+</a>
+<a class="sponsor-logo" href="https://www.instagram.com/meplant_dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Meplant" src="images/sponsors/MePlant.png"/>
+<span>meplant</span>
+</a>
+<a class="sponsor-logo" href="https://www.sydjysksparekasse.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Sydjysk Sparekasse" src="images/sponsors/SydjyskSparekasse.png"/>
+<span>Sydjysk Sparekasse</span>
+</a>
+<a class="sponsor-logo" href="https://www.alfalaval.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Alfa Laval" src="images/sponsors/Alfa Laval.webp"/>
+<span>Alfa Laval</span>
+</a>
+<div class="sponsor-logo">
+<img alt="Fallesen Maskiner" src="images/sponsors/Fallesen Maskiner.png"/>
+<span>Fallesen Maskiner</span>
+</div>
+          </div>
+        </div>
       </div>
 
-      <p class="small-note">
-        Kig forbi igen senere.
-      </p>
+      <p class="ticker-help">Hold musen over for at pause · Klik og træk for at navigere</p>
+    </section>
 
+    <section class="teams-section" id="hold" aria-labelledby="teams-heading">
+      <div class="section-heading">
+        <span class="eyebrow">Find rundt</span>
+        <h2 id="teams-heading">Hold og klubinformation</h2>
+        <p>Gå direkte til dit hold, stillinger, spillertrupper eller praktisk klubinformation.</p>
+      </div>
+
+      <div class="team-grid">
+        <a class="team-card team-card-featured" href="s2h.html">
+          <span class="team-card-type">Herrer</span>
+          <strong>Serie 2 Herre</strong>
+          <span class="team-card-text">Kampprogram, resultater og holdkort</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-featured" href="s3h.html">
+          <span class="team-card-type">Herrer</span>
+          <strong>Serie 3 Herre</strong>
+          <span class="team-card-text">Kampe og information</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-featured" href="s3h2.html">
+          <span class="team-card-type">Herrer</span>
+          <strong>Serie 3 Herre 2</strong>
+          <span class="team-card-text">Kampe og information</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-featured" href="s1k.html">
+          <span class="team-card-type">Kvinder</span>
+          <strong>Serie 1 Kvinder</strong>
+          <span class="team-card-text">Kampe og information</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-featured" href="s3k.html">
+          <span class="team-card-type">Kvinder</span>
+          <strong>Serie 3 Kvinder</strong>
+          <span class="team-card-text">Kampe og information</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-info" href="stilling.html">
+          <span class="team-card-type">Turnering</span>
+          <strong>Stillinger</strong>
+          <span class="team-card-text">Se tabeller og placeringer</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-info" href="kifh.html">
+          <span class="team-card-type">Fynslundhallen</span>
+          <strong>Kampe i hallen</strong>
+          <span class="team-card-text">Samlet oversigt over hjemmekampe</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="team-card team-card-info" href="https://danskhaandbold.dk/foreninger/16019/holdoversigt">
+          <span class="team-card-type">DanskHaandbold</span>
+          <strong>Holdoversigt</strong>
+          <span class="team-card-text">Her er link til DanskHaandbold.dk</span>
+          <span class="team-card-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-fixtures-section" id="hjemmekampe" aria-labelledby="home-fixtures-heading">
+      <div class="home-fixtures-shell">
+        <div class="section-heading section-heading-left section-heading-dark">
+          <span class="eyebrow">Kampdag i Fynslundhallen</span>
+          <h2 id="home-fixtures-heading">Næste hjemmekampe (27/09)</h2>
+          <p>Fire kampe på samme dag – følg hele programmet her.</p>
+        </div>
+
+        <div class="home-fixtures-list">
+          <article class="home-fixture">
+            <div class="fixture-date">
+              <span>SØN</span>
+              <strong>27</strong>
+              <small>SEP</small>
+            </div>
+            <div class="fixture-main">
+              <span class="fixture-team-label">Serie 2 Herre</span>
+              <div class="fixture-opponent">
+                <img src="images/logo/gauerslund.png" alt="Hauerslund HK">
+                <strong>Gauerslund HK</strong>
+              </div>
+            </div>
+            <div class="fixture-time">
+              <span>Kampstart</span>
+              <strong>10:00</strong>
+            </div>
+            <div class="fixture-referee">
+              <span>Dommer</span>
+              <strong>Niels Andersen & Henrik Jensen</strong>
+            </div>
+          </article>
+
+          <article class="home-fixture">
+            <div class="fixture-date">
+              <span>SØN</span>
+              <strong>27</strong>
+              <small>SEP</small>
+            </div>
+            <div class="fixture-main">
+              <span class="fixture-team-label">Serie 1 Kvinder</span>
+              <div class="fixture-opponent">
+                <img src="images/logo/vejle.png" alt="Vejle HK">
+                <strong>Vejle HK</strong>
+              </div>
+            </div>
+            <div class="fixture-time">
+              <span>Kampstart</span>
+              <strong>11:30</strong>
+            </div>
+            <div class="fixture-referee">
+              <span>Dommer</span>
+              <strong>Niels Andersen & Henrik Jensen</strong>
+            </div>
+          </article>
+
+          <article class="home-fixture">
+            <div class="fixture-date">
+              <span>SØN</span>
+              <strong>27</strong>
+              <small>SEP</small>
+            </div>
+            <div class="fixture-main">
+              <span class="fixture-team-label">Serie 3 Herre</span>
+              <div class="fixture-opponent">
+                <img src="images/logo/hover.png" alt="Hover IF">
+                <strong>Hover IF</strong>
+              </div>
+            </div>
+            <div class="fixture-time">
+              <span>Kampstart</span>
+              <strong>13:00</strong>
+            </div>
+            <div class="fixture-referee">
+              <span>Dommer</span>
+              <strong>Thorkil Schrøder</strong>
+            </div>
+          </article>
+
+          <article class="home-fixture">
+            <div class="fixture-date">
+              <span>SØN</span>
+              <strong>27</strong>
+              <small>SEP</small>
+            </div>
+            <div class="fixture-main">
+              <span class="fixture-team-label">Serie 3 Kvinder</span>
+              <div class="fixture-opponent">
+                <img src="images/logo/foldingbrorup.png" alt="Folding-Brørup HK">
+                <strong>Folding-Brørup HK</strong>
+              </div>
+            </div>
+            <div class="fixture-time">
+              <span>Kampstart</span>
+              <strong>14:15</strong>
+            </div>
+            <div class="fixture-referee">
+              <span>Dommer</span>
+              <strong>Thorkil Schrøder</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-fixtures-section" id="naeste-kampe" aria-labelledby="next-fixtures-heading">
+  <div class="section-heading">
+    <span class="eyebrow">På udebane og hjemmebane</span>
+    <h2 id="next-fixtures-heading">Næste kampe</h2>
+    <p>Et hurtigt overblik over de kommende kampe for klubbens hold.</p>
+  </div>
+
+  <div class="next-matches">
+
+    <article class="match-box">
+      <div class="match-box-top">
+        <span class="match-category">Serie 2 Herre</span>
+        <span class="na-pill home-pill">HJEMME</span>
+      </div>
+
+      <div class="match-date-block">
+        <strong>SØN</strong>
+        <span>27. SEP</span>
+        <small>10:00 · 2 X 30 min.</small>
+      </div>
+
+      <div class="opponent">
+        <img src="images/logo/gauerslund.png" alt="Gauerslund Håndboldklub logo">
+        <strong>Gauerslund Håndboldklub</strong>
+      </div>
+
+      <div class="match-meta">
+        <p><span>Spillested</span>Fynslundhallen</p>
+        <p><span>Adresse</span>Fynslundvej 104, 6064 Jordrup</p>
+        <p><span>Dommer</span>Niels Andersen & Henrik Jensen</p>
+      </div>
+    </article>
+
+
+    <article class="match-box">
+      <div class="match-box-top">
+        <span class="match-category">Serie 3 Herre</span>
+        <span class="na-pill home-pill">HJEMME</span>
+      </div>
+
+      <div class="match-date-block">
+        <strong>SØN</strong>
+        <span>27. SEP</span>
+        <small>13:00 · 2 X 25 min.</small>
+      </div>
+
+      <div class="opponent">
+        <img src="images/logo/hover.png" alt="Hover logo">
+        <strong>Hover IF</strong>
+      </div>
+
+      <div class="match-meta">
+        <p><span>Spillested</span>Fynslundhallen</p>
+        <p><span>Adresse</span>Fynslundvej 104, 6064 Jordrup</p>
+        <p><span>Dommer</span>Thorkil Schrøder</p>
+      </div>
+    </article>
+
+
+    <article class="match-box">
+      <div class="match-box-top">
+        <span class="match-category">Serie 3 Herre 2</span>
+        <span class="na-pill away-pill">UDE</span>
+      </div>
+
+      <div class="match-date-block">
+        <strong>SØN</strong>
+        <span>04. OKT</span>
+        <small>18:20 · 2 X 25 min.</small>
+      </div>
+
+      <div class="opponent">
+        <img src="images/logo/rodding.png" alt="Rødding logo">
+        <strong>Rødding IF</strong>
+      </div>
+
+      <div class="match-meta">
+        <p><span>Spillested</span>Rødding Centret, Hallerne</p>
+        <p><span>Adresse</span>Søndergyden 15, 6630 Rødding</p>
+        <p><span>Dommer</span>Morten Schjødt Pedersen</p>
+      </div>
+    </article>
+
+
+    <article class="match-box">
+      <div class="match-box-top">
+        <span class="match-category">Serie 1 Kvinder</span>
+        <span class="na-pill home-pill">HJEMME</span>
+      </div>
+
+      <div class="match-date-block">
+        <strong>SØN</strong>
+        <span>27. SEP</span>
+        <small>11:30 · 2 X 30 min.</small>
+      </div>
+
+      <div class="opponent">
+        <img src="images/logo/vejle.png" alt="Vejle HK logo">
+        <strong>Vejle HK</strong>
+      </div>
+
+      <div class="match-meta">
+        <p><span>Spillested</span>Fynslundhallen</p>
+        <p><span>Adresse</span>Fynslundvej 104, 6064 Jordrup</p>
+        <p><span>Dommer</span>Niels Andersen & Henrik Jensen</p>
+      </div>
+    </article>
+
+
+    <article class="match-box">
+      <div class="match-box-top">
+        <span class="match-category">Serie 3 Kvinder</span>
+        <span class="na-pill home-pill">HJEMME</span>
+      </div>
+
+      <div class="match-date-block">
+        <strong>SØN</strong>
+        <span>27. SEP</span>
+        <small>14:15 · 2 X 25 min.</small>
+      </div>
+
+      <div class="opponent">
+        <img src="images/logo/foldingbrorup.png" alt="Folding-Brørup logo">
+        <strong>Folding-Brørup</strong>
+      </div>
+
+      <div class="match-meta">
+        <p><span>Spillested</span>Fynslundhallen</p>
+        <p><span>Adresse</span>Fynslundvej 104, 6064 Jordrup</p>
+        <p><span>Dommer</span>Thorkil Schrøder</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <section class="resources-section" aria-labelledby="resources-heading">
+      <div class="section-heading">
+        <span class="eyebrow">Klubben omkring holdene</span>
+        <h2 id="resources-heading">Nyttige links</h2>
+        <p>Find hallen, klubben og de lokale medier omkring Fynslund.</p>
+      </div>
+
+      <div class="resource-grid">
+        <a class="resource-card" href="https://fynslundboldklub.dk/" target="_blank" rel="noopener noreferrer">
+          <span>Klub</span>
+          <strong>Fynslund Boldklub</strong>
+          <small>Besøg klubbens hovedside</small>
+          <b aria-hidden="true">↗</b>
+        </a>
+
+        <a class="resource-card" href="https://fynslundhallen.dk/" target="_blank" rel="noopener noreferrer">
+          <span>Faciliteter</span>
+          <strong>Fynslundhallen</strong>
+          <small>Information om hallen</small>
+          <b aria-hidden="true">↗</b>
+        </a>
+
+        <a class="resource-card" href="https://jordrup.dk/" target="_blank" rel="noopener noreferrer">
+          <span>Lokalsamfund</span>
+          <strong>Fynslund/Jordrup</strong>
+          <small>Lokale nyheder og aktiviteter</small>
+          <b aria-hidden="true">↗</b>
+        </a>
+
+        <a class="resource-card" href="https://www.fynslundhallen.dk/index.php/2012-10-08-16-42-17" target="_blank" rel="noopener noreferrer">
+          <span>Klubblad</span>
+          <strong>FB Folderen</strong>
+          <small>Læs klubbens folder</small>
+          <b aria-hidden="true">↗</b>
+        </a>
+
+        <a class="resource-card" href="https://jordrup.dk/fynslund-magasinet-bibliotek/" target="_blank" rel="noopener noreferrer">
+          <span>Magasin</span>
+          <strong>Fynslund Magasinet</strong>
+          <small>Gå til magasinarkivet</small>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo/fynslund.png" alt="Fynslund BK Logo">
+        <div>
+          <strong>Fynslund BK Håndbold</strong>
+          <span>Sammen om håndbolden</span>
+        </div>
+      </div>
+
+      <a href="#top" class="back-to-top">↑ Rul til toppen</a>
+    </div>
+  </footer>
+
+  <script src="fynslundhandbold.js" defer></script>
 </body>
 </html>
