@@ -1,1 +1,836 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kampprogram, resultater og holdkort for Fynslund BK Serie 2 Herrer i sæsonen 2026.">
+  <title>Serie 2 Herre | Fynslund BK Håndbold</title>
+  <link rel="stylesheet" href="s2h.css">
+  <link rel="icon" href="images/logo/fynslund.png">
+</head>
 
+<body id="top">
+  <a class="skip-link" href="#kampe">Spring til kampprogram</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="/" class="brand" aria-label="Gå til Fynslund BK Håndbolds forside">
+        <img src="images/logo/fynslund.png" alt="Fynslund BK">
+        <span class="brand-text">
+          <small>Fynslund Boldklub</small>
+          <strong>Håndbold</strong>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Åbn menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Hovedmenu">
+        <a href="#oversigt">Holdet</a>
+        <a href="#kampe">Kampe</a>
+        <a href="#sponsorer">Sponsorer</a>
+        <a href="/" class="nav-cta">Til forsiden</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="team-hero" id="oversigt">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="breadcrumb">
+            <a href="index.html">Fynslund Håndbold</a>
+            <span>/</span>
+            <strong>Serie 2 Herrer</strong>
+          </div>
+
+          <span class="eyebrow">Herresenior · Sæson 2026</span>
+          <h1>Serie 2<br><span>Herrer</span></h1>
+
+          <p>
+            Kampprogram, resultater, holdkort og sæsonoverblik samlet ét sted.
+            Følg Fynslund BK gennem hele sæsonen.
+            Nu også i Pokalturneringen
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kampe">Se kampprogram</a>
+            <a class="button button-secondary" href="#sponsorer">Se sponsorer</a>
+          </div>
+
+          <div class="hero-tags" aria-label="Holdinformation">
+            <span><b>0</b> spillede kampe</span>
+            <span><b>0</b> hjemmekampe</span>
+            <span><b>0</b> udekampe</span>
+          </div>
+        </div>
+
+        <aside class="team-identity-card" aria-label="Holdprofil">
+          <span class="identity-label">Fynslund BK</span>
+
+          <div class="identity-logo">
+            <img src="images/logo/fynslund.png" alt="Fynslund BK logo">
+          </div>
+
+          <p>Herresenior</p>
+          <h2>Serie 2 Herrer</h2>
+          <span class="identity-season">2026</span>
+
+          <div class="identity-line"></div>
+          <small>Stolthed · Fællesskab · Håndbold</small>
+        </aside>
+      </div>
+
+      <div class="season-dashboard" aria-label="Sæsonstatistik">
+        <article>
+          <span>Kampe</span>
+          <strong>0</strong>
+          <small>Spillede</small>
+        </article>
+
+        <article class="stat-win">
+          <span>Sejre</span>
+          <strong>0</strong>
+          <small>0 % sejrsrate</small>
+        </article>
+
+        <article class="stat-draw">
+          <span>Uafgjorte</span>
+          <strong>0</strong>
+          <small>Ingen endnu</small>
+        </article>
+
+        <article class="stat-loss">
+          <span>Nederlag</span>
+          <strong>0</strong>
+          <small>Resultater</small>
+        </article>
+
+        <article class="stat-goals">
+          <span>Målscore</span>
+          <strong>0-0</strong>
+          <small>0 i difference</small>
+        </article>
+      </div>
+
+      <div class="form-panel">
+        <div>
+          <span class="form-kicker">Seneste form</span>
+          <strong>Seneste kampe</strong>
+        </div>
+
+        <div class="form-track" aria-label="Form: nederlag, sejr og nederlag">
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+          <span class="form-NA"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="match-center" id="kampe">
+      <div class="section-shell">
+        <header class="section-heading">
+          <div>
+            <span class="eyebrow eyebrow-dark">Kampcenter</span>
+            <h2>Sæsonens kampe</h2>
+            <p>Vælg en kategori, og åbn holdkortet på den enkelte kamp for at se kamptrupperne.</p>
+          </div>
+
+          <div class="match-count" aria-live="polite">
+            <strong id="visibleMatchCount">10</strong>
+            <span>kampe vist</span>
+          </div>
+        </header>
+
+        <div class="match-toolbar" role="group" aria-label="Filtrér kampe">
+          <button class="filter-button is-active" type="button" data-filter="all">Alle kampe <span>10</span></button>
+          <button class="filter-button" type="button" data-filter="home">Hjemme <span>0</span></button>
+          <button class="filter-button" type="button" data-filter="away">Ude <span>0</span></button>
+          <button class="filter-button" type="button" data-filter="win">Sejre <span>0</span></button>
+          <button class="filter-button" type="button" data-filter="loss">Nederlag <span>0</span></button>
+          <button class="filter-button" type="button" data-filter="draw">Uafgjort <span>0</span></button>
+        </div>
+
+        
+<article aria-label="Kamp 1: Fynslund BK mod Gauerslund Håndboldklub, N/A, Søndag 27. september 2026 · 10:00" class="match-card N/A" data-location="home" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 01</span><div class="date">Søndag 27. september 2026 · 10:00</div></div><span class="home-badge">HJEMME</span></div>
+<div class="teams">
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+<strong>Fynslund BK</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Gauerslund Håndboldklub</strong>
+<img alt="Gauerslund Håndboldklub logo" decoding="async" loading="lazy" src="images/logo/gauerslund.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Fynslundhallen</p>
+<p><b>Adresse:</b> Fynslundvej 104, 6064 Jordrup</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402654</p>
+</div>
+</article>
+
+
+<article aria-label="Kamp 2: Ammitsbøl/Egtved mod Fynslund BK, N/A, Torsdag 08. oktober 2026 · 20:40" class="match-card N/A" data-location="away" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 02</span><div class="date">Torsdag 08. oktober 2026 · 20:40</div></div><span class="away-badge">UDE</span></div>
+<div class="teams">
+<img alt="Ammitsbøl/Egtved logo" decoding="async" loading="lazy" src="images/logo/ammitsbol.png"/>
+<strong>Ammitsbøl/Egtved</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Fynslund BK</strong>
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Brunmosehallen, Ødsted</p>
+<p><b>Adresse:</b> Mølkærparken 5, 7100 Vejle</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402657</p>
+</div>
+</article>
+
+
+<!-- Kamp 03 -->
+<article aria-label="Kamp 3: Fynslund BK mod Erritsø G&IF, N/A, Tirsdag 27. oktober 2026 · 20:15" class="match-card N/A" data-location="home" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 03</span><div class="date">Tirsdag 27. oktober 2026 · 20:15</div></div><span class="home-badge">HJEMME</span></div>
+<div class="teams">
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+<strong>Fynslund BK</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Erritsø G&IF</strong>
+<img alt="Erritsø G&IF logo" decoding="async" loading="lazy" src="images/logo/erritso.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Fynslundhallen</p>
+<p><b>Adresse:</b> Fynslundvej 104, 6064 Jordrup</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402660</p>
+</div>
+</article>
+
+<!-- Kamp 04 -->
+<article aria-label="Kamp 4: Fynslund BK mod Vejle Håndbold Klub 3, N/A, Søndag 01. november 2026 · 14:10" class="match-card N/A" data-location="home" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 04</span><div class="date">Søndag 01. november 2026 · 14:10</div></div><span class="home-badge">HJEMME</span></div>
+<div class="teams">
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+<strong>Fynslund BK</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Vejle Håndbold Klub 3</strong>
+<img alt="Vejle Håndbold Klub 3 logo" decoding="async" loading="lazy" src="images/logo/vejle.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Fynslundhallen</p>
+<p><b>Adresse:</b> Fynslundvej 104, 6064 Jordrup</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402663</p>
+</div>
+</article>
+
+<!-- Kamp 05 -->
+<article aria-label="Kamp 5: Søndermarken Vejle Håndbold Klub mod Fynslund BK, N/A, Torsdag 05. november 2026 · 20:40" class="match-card N/A" data-location="away" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 05</span><div class="date">Torsdag 05. november 2026 · 20:40</div></div><span class="away-badge">UDE</span></div>
+<div class="teams">
+<img alt="Søndermarken Vejle Håndbold Klub logo" decoding="async" loading="lazy" src="images/logo/sondermarken.png"/>
+<strong>Søndermarken Vejle Håndbold Klub</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Fynslund BK</strong>
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Søndermarkshallen, Vejle</p>
+<p><b>Adresse:</b> N/A</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402666</p>
+</div>
+</article>
+
+<!-- Kamp 06 -->
+<article aria-label="Kamp 6: Gauerslund Håndboldklub mod Fynslund BK, N/A, Søndag 15. november 2026 · 14:45" class="match-card N/A" data-location="away" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 06</span><div class="date">Søndag 15. november 2026 · 14:45</div></div><span class="away-badge">UDE</span></div>
+<div class="teams">
+<img alt="Gauerslund Håndboldklub logo" decoding="async" loading="lazy" src="images/logo/gauerslund.png"/>
+<strong>Gauerslund Håndboldklub</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Fynslund BK</strong>
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Gauerslund Idrætscenter</p>
+<p><b>Adresse:</b> N/A</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402671</p>
+</div>
+</article>
+
+<!-- Kamp 07 -->
+<article aria-label="Kamp 7: Fynslund BK mod Ammitsbøl/Egtved, N/A, Søndag 22. november 2026 · 14:10" class="match-card N/A" data-location="home" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 07</span><div class="date">Søndag 22. november 2026 · 14:10</div></div><span class="home-badge">HJEMME</span></div>
+<div class="teams">
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+<strong>Fynslund BK</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Ammitsbøl/Egtved</strong>
+<img alt="Ammitsbøl/Egtved logo" decoding="async" loading="lazy" src="images/logo/ammitsbol.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Fynslundhallen</p>
+<p><b>Adresse:</b> Fynslundvej 104, 6064 Jordrup</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402672</p>
+</div>
+</article>
+
+<!-- Kamp 08 -->
+<article aria-label="Kamp 8: Erritsø G&IF mod Fynslund BK, N/A, Søndag 29. november 2026 · 13:10" class="match-card N/A" data-location="away" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 08</span><div class="date">Søndag 29. november 2026 · 13:10</div></div><span class="away-badge">UDE</span></div>
+<div class="teams">
+<img alt="Erritsø G&IF logo" decoding="async" loading="lazy" src="images/logo/erritso.png"/>
+<strong>Erritsø G&IF</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Fynslund BK</strong>
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Erritsø Idrætscenter</p>
+<p><b>Adresse:</b> N/A</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402675</p>
+</div>
+</article>
+
+<!-- Kamp 09 -->
+<article aria-label="Kamp 9: Vejle Håndbold Klub 3 mod Fynslund BK, N/A, Søndag 06. december 2026 · 14:45" class="match-card N/A" data-location="away" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 09</span><div class="date">Søndag 06. december 2026 · 14:45</div></div><span class="away-badge">UDE</span></div>
+<div class="teams">
+<img alt="Vejle Håndbold Klub 3 logo" decoding="async" loading="lazy" src="images/logo/vejle.png"/>
+<strong>Vejle Håndbold Klub 3</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Fynslund BK</strong>
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> DGI-huset Vejle</p>
+<p><b>Adresse:</b> N/A</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402679</p>
+</div>
+</article>
+
+<!-- Kamp 10 -->
+<article aria-label="Kamp 10: Fynslund BK mod Søndermarken Vejle Håndbold Klub, N/A, Søndag 13. december 2026 · 15:40" class="match-card N/A" data-location="home" data-result="N/A">
+<div class="match-topline"><div class="match-ident"><span class="match-number">Kamp 10</span><div class="date">Søndag 13. december 2026 · 15:40</div></div><span class="home-badge">HJEMME</span></div>
+<div class="teams">
+<img alt="Fynslund BK logo" decoding="async" loading="lazy" src="images/logo/fynslund.png"/>
+<strong>Fynslund BK</strong>
+<div>
+<span class="score N/A">N/A</span>
+<span class="result-label N/A">Ikke Spillet</span>
+</div>
+<strong>Søndermarken Vejle Håndbold Klub</strong>
+<img alt="Søndermarken Vejle Håndbold Klub logo" decoding="async" loading="lazy" src="images/logo/sondermarken.png"/>
+</div>
+
+<div class="details">
+<p><b>Spillested:</b> Fynslundhallen</p>
+<p><b>Adresse:</b> Fynslundvej 104, 6064 Jordrup</p>
+<p><b>Dommere:</b> N/A</p>
+<p><b>Kampnr:</b> 402681</p>
+</div>
+</article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cup-section" id="pokalturnering">
+  <div class="section-shell">
+
+    <header class="section-header">
+      <span class="section-kicker">Pokalturnering</span>
+      <h2>Pokalturneringen</h2>
+      <p>
+        Serie 2 Herre deltog i Landspokalturneringen.
+        Første kamp blev spillet hjemme i Fynslundhallen.
+      </p>
+    </header>
+
+    <div class="match-grid">
+
+      <article
+        aria-label="Pokalturnering: Fynslund BK mod IF 92, Esbjerg, nederlag 22-25, tirsdag 22. september 2026 · 20:25"
+        class="match-card loss cup-card"
+        data-location="home"
+        data-result="loss"
+      >
+
+        <div class="match-topline">
+          <div class="match-ident">
+            <span class="match-number">1. Runde</span>
+            <div class="date">Tirsdag 22. september 2026 · 20:25</div>
+          </div>
+
+          <span class="neutral-badge">POKAL</span>
+        </div>
+
+        <div class="teams">
+          <img
+            alt="Fynslund BK logo"
+            decoding="async"
+            loading="lazy"
+            src="images/logo/fynslund.png"
+          >
+
+          <strong>Fynslund BK</strong>
+
+          <div>
+            <span class="score loss-score">22 - 25</span>
+            <span class="result-label loss-label">Nederlag</span>
+          </div>
+
+          <strong>IF 92, Esbjerg</strong>
+
+          <img
+            alt="IF 92, Esbjerg logo"
+            decoding="async"
+            loading="lazy"
+            src="images/logo/if92esbjerg.png"
+          >
+        </div>
+
+        <details class="lineup-toggle">
+  <summary>
+    <span class="summary-copy">
+      <small>Kamptrup</small>
+      <strong>Holdkort og kamptrupper</strong>
+    </span>
+
+    <span class="summary-action">Åbn</span>
+  </summary>
+
+  <div class="team-lineups">
+
+    <!-- HJEMMEHOLD -->
+    <section class="lineup-card">
+      <header class="lineup-title">
+        <h3>Fynslund BK</h3>
+        <span>Hjemmehold</span>
+      </header>
+
+      <div class="lineup-table-wrapper">
+        <table class="lineup-table">
+          <thead>
+            <tr>
+              <th scope="col">Nummer</th>
+              <th scope="col">Spiller</th>
+              <th scope="col">Fødselsmåned</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Philip Aaberg</td>
+              <td>08/03</td>
+            </tr>
+
+            <tr>
+              <td>23</td>
+              <td>Jeppe De La Roi Mateusiak</td>
+              <td>02/92</td>
+            </tr>
+
+            <tr>
+              <td>25</td>
+              <td>Christian Pagh Blem Sørensen</td>
+              <td>12/03</td>
+            </tr>
+
+            <tr>
+              <td>28</td>
+              <td>Christian Ravn Damgaard</td>
+              <td>01/97</td>
+            </tr>
+
+            <tr>
+              <td>43</td>
+              <td>Christian Vejen-Jensen</td>
+              <td>11/03</td>
+            </tr>
+
+            <tr>
+              <td>48</td>
+              <td>Danni Overgaard Budde</td>
+              <td>03/96</td>
+            </tr>
+
+            <tr>
+              <td>61</td>
+              <td>Daniel Benzon</td>
+              <td>01/88</td>
+            </tr>
+
+            <tr>
+              <td>73</td>
+              <td>Jesper Gori Jessen</td>
+              <td>03/98</td>
+            </tr>
+
+            <tr>
+              <td>81</td>
+              <td>Peter Højhus</td>
+              <td>12/96</td>
+            </tr>
+
+            <tr>
+              <td>82</td>
+              <td>Jeppe Sandal Simonsen Kristiansen</td>
+              <td>07/96</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="lineup-responsible">
+        <h4>Ansvarlige</h4>
+
+        <div class="responsible-box">
+          <span>Holdansvarlig</span>
+          <strong>Per Koed Rinus Jensen</strong>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- UDEHOLD -->
+    <section class="lineup-card">
+      <header class="lineup-title">
+        <h3>IF 92, Esbjerg</h3>
+        <span>Udehold</span>
+      </header>
+
+      <div class="lineup-table-wrapper">
+        <table class="lineup-table">
+          <thead>
+            <tr>
+              <th scope="col">Nummer</th>
+              <th scope="col">Spiller</th>
+              <th scope="col">Fødselsmåned</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Frederik Hougaard</td>
+              <td>07/00</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Nikolaj Brunsgaard</td>
+              <td>06/93</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>Mikkel Freund</td>
+              <td>01/00</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>Kasper Grønne Larsen</td>
+              <td>09/85</td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>Daniel Hjermgart</td>
+              <td>08/95</td>
+            </tr>
+
+            <tr>
+              <td>10</td>
+              <td>Jesper Jantzen Kristensen</td>
+              <td>12/96</td>
+            </tr>
+
+            <tr>
+              <td>16</td>
+              <td>Malthe Larsen</td>
+              <td>11/04</td>
+            </tr>
+
+            <tr>
+              <td>18</td>
+              <td>Nicolai Bach Petersen</td>
+              <td>08/01</td>
+            </tr>
+
+            <tr>
+              <td>31</td>
+              <td>Mads Thomsen</td>
+              <td>04/94</td>
+            </tr>
+
+            <tr>
+              <td>64</td>
+              <td>Christoffer Vestergaard</td>
+              <td>10/87</td>
+            </tr>
+
+            <tr>
+              <td>89</td>
+              <td>Nicco Vestbo Hattesen</td>
+              <td>09/02</td>
+            </tr>
+
+            <tr>
+              <td>92</td>
+              <td>Michael Sørensen</td>
+              <td>05/96</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="lineup-responsible">
+        <h4>Ansvarlige</h4>
+
+        <div class="responsible-box">
+          <span>Holdansvarlig</span>
+          <strong>Felix Fogh-Hirche</strong>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</details>
+
+        <div class="details">
+          <p><b>Spillested:</b> Fynslundhallen</p>
+          <p><b>Adresse:</b> Fynslundvej 104, 6064 Jordrup</p>
+          <p><b>Dommere:</b> Jan Laugesen &amp; Kim Jørgensen</p>
+          <p><b>Kampnr:</b> 351802</p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+    <br>
+
+    </br>
+    <section class="sponsor-section" id="sponsorer">
+      <div class="sponsor-heading">
+        <span class="eyebrow">Sammen om Fynslund Boldklub</span>
+        <h2>Tak til vores sponsorer</h2>
+        <p>Deres støtte er med til at skabe rammerne for håndbolden i Fynslund.</p>
+      </div>
+
+      <div class="sponsor-ticker" aria-label="Fynslund BK's sponsorer">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <a aria-label="Besøg Smededal" class="sponsor-logo" href="http://www.smededal.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Smededal v/Per Vejen-Jensen" decoding="async" loading="lazy" src="images/sponsors/Smededal.jfif"/>
+<span>Smededal</span>
+</a><a aria-label="Besøg Smede og Montagefirma v/René Hviid" class="sponsor-logo" href="https://smedeogmontage.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Smede og Montagefirma v/René Hviid, Lejrskov" decoding="async" loading="lazy" src="images/sponsors/Smede og montage.PNG"/>
+<span>Smede og Montagefirma v/René Hviid</span>
+</a><a aria-label="Besøg Byg Og Montage v/Hans Nautrup" class="sponsor-logo" href="https://www.bygogmontage.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Byg Og Montage v/Hans Nautrup" decoding="async" loading="lazy" src="images/sponsors/Byg og montage.jpg"/>
+<span>Byg Og Montage v/Hans Nautrup</span>
+</a><a aria-label="Besøg Malermester Morten Hinrichsen" class="sponsor-logo" href="https://www.facebook.com/MalermesterMortenHinrichsen/?locale=da_DK" rel="noopener noreferrer" target="_blank">
+<img alt="Malermester Morten Hinrichsen" decoding="async" loading="lazy" src="images/sponsors/Malermester Morten Hinrichsen.png"/>
+<span>Malermester Morten Hinrichsen</span>
+</a><div aria-label="Bønderne i Vrå" class="sponsor-logo">
+<img alt="Bønderne i Vrå" decoding="async" loading="lazy" src="images/sponsors/Boenderne i Vraa.PNG"/>
+<span>Bønderne i Vrå</span>
+</div><a aria-label="Besøg Ditlevsen Biler" class="sponsor-logo" href="https://ditlevsen-biler.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Ditlevsen Biler" decoding="async" loading="lazy" src="images/sponsors/Ditlevsen Biler.png"/>
+<span>Ditlevsen Biler</span>
+</a><div aria-label="MATZEN Anlæg" class="sponsor-logo">
+<img alt="MATZEN Anlæg" decoding="async" loading="lazy" src="images/sponsors/Matzen Anlaeg.jpg"/>
+<span>MATZEN Anlæg</span>
+</div><a aria-label="Besøg KD Byg" class="sponsor-logo" href="https://kdbyg.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="KD Byg" decoding="async" loading="lazy" src="images/sponsors/KDbyg.png"/>
+<span>KD Byg</span>
+</a><a aria-label="Besøg ECM Industries" class="sponsor-logo" href="https://ecm.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="ECM Industries" decoding="async" loading="lazy" src="images/sponsors/ECM Industries.jpg"/>
+<span>ECM Industries</span>
+</a><a aria-label="Besøg NORVA24" class="sponsor-logo" href="https://norva24.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="NORVA24" decoding="async" loading="lazy" src="images/sponsors/Norva24.png"/>
+<span>NORVA24</span>
+</a><a aria-label="Besøg Lykkes Guld og Sølv" class="sponsor-logo" href="https://www.lykkesguld.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Lykkes Guld og Sølv" decoding="async" loading="lazy" src="images/sponsors/Lykkes guld og soelv.png"/>
+<span>Lykkes Guld og Sølv</span>
+</a><a aria-label="Besøg Martinsen, Rådgivning og Revision" class="sponsor-logo" href="https://martinsen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Martinsen, Rådgivning og Revision" decoding="async" loading="lazy" src="images/sponsors/Martinsen Raadgivning.png"/>
+<span>Martinsen, Rådgivning og Revision</span>
+</a><a aria-label="Besøg Smedemark &amp; Sørensen El" class="sponsor-logo" href="https://ss-el.eu/" rel="noopener noreferrer" target="_blank">
+<img alt="Smedemark &amp; Sørensen El" decoding="async" loading="lazy" src="images/sponsors/Smedemark og Soerensen.png"/>
+<span>Smedemark &amp; Sørensen El</span>
+</a><a aria-label="Besøg Malerfirmaet Vagn Poulsen" class="sponsor-logo" href="https://vagn-poulsen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Malerfirmaet Vagn Poulsen" decoding="async" loading="lazy" src="images/sponsors/Malerfirmaet Vagn Poulsen.webp"/>
+<span>Malerfirmaet Vagn Poulsen</span>
+</a><a aria-label="Besøg Øster Gesten Special" class="sponsor-logo" href="https://og-special.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Øster Gesten Special" decoding="async" loading="lazy" src="images/sponsors/Oester Gesten.jpg"/>
+<span>Øster Gesten Special</span>
+</a><a aria-label="Besøg DOXX Hundecenter" class="sponsor-logo" href="https://doxx.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="DOXX Hundecenter" decoding="async" loading="lazy" src="images/sponsors/Doxx Hundecenter.png"/>
+<span>DOXX Hundecenter</span>
+</a><a aria-label="Besøg Lejrskov-Jordrup Menighedsråd" class="sponsor-logo" href="https://www.lejrskov-jordrupkirker.dk/menighedsraadet" rel="noopener noreferrer" target="_blank">
+<img alt="Lejrskov-Jordrup Menighedsråd" decoding="async" loading="lazy" src="images/sponsors/Menighedsraad.jpg"/>
+<span>Lejrskov-Jordrup Menighedsråd</span>
+</a><a aria-label="Besøg Svend Arndal Tømrerfirma" class="sponsor-logo" href="https://www.svendarndal.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Svend Arndal Tømrerfirma" decoding="async" loading="lazy" src="images/sponsors/Svend Arndal.png"/>
+<span>Svend Arndal Tømrerfirma</span>
+</a><a aria-label="Besøg Bravida" class="sponsor-logo" href="https://www.bravida.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Bravida" decoding="async" loading="lazy" src="images/sponsors/Bravida.png"/>
+<span>Bravida</span>
+</a><a aria-label="Besøg OK" class="sponsor-logo" href="https://www.ok.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="OK" decoding="async" loading="lazy" src="images/sponsors/OK.jpg"/>
+<span>OK</span>
+</a><a aria-label="Besøg SR Teknik" class="sponsor-logo" href="https://srteknik.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="SR Teknik" decoding="async" loading="lazy" src="images/sponsors/SR Teknik.jpg"/>
+<span>SR Teknik</span>
+</a><a aria-label="Besøg Vognmandsforretning Jens H. Pedersen og Søn" class="sponsor-logo" href="https://www.jenshpedersen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Vognmandsforretning Jens H. Pedersen og Søn" decoding="async" loading="lazy" src="images/sponsors/Jens H. Pedersen.png"/>
+<span>Vognmandsforretning Jens H. Pedersen og Søn</span>
+</a><a aria-label="Besøg A/S Bryggeriet Vestfyen" class="sponsor-logo" href="https://bryggeriet-vestfyen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="A/S Bryggeriet Vestfyen" decoding="async" loading="lazy" src="images/sponsors/Bryggeriet Vestfyn.jpg"/>
+<span>A/S Bryggeriet Vestfyen</span>
+</a><a aria-label="Besøg JH Maskinteknik" class="sponsor-logo" href="https://jh-maskinteknik.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="JH Maskinteknik" decoding="async" loading="lazy" src="images/sponsors/JH Maskinteknik.png"/>
+<span>JH Maskinteknik</span>
+</a><a aria-label="Besøg El-installatør Henning Christiansen" class="sponsor-logo" href="https://www.hchristiansen.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="El-installatør Henning Christiansen" decoding="async" loading="lazy" src="images/sponsors/H. Christiansen.webp"/>
+<span>El-installatør Henning Christiansen</span>
+</a><a aria-label="Besøg Alle Fødders Ven" class="sponsor-logo" href="https://www.xn--allefddersven-fnb.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Alle Fødders Ven" decoding="async" loading="lazy" src="images/sponsors/Alle Foedders Ven.jpg"/>
+<span>Alle Fødders Ven</span>
+</a><a aria-label="Besøg SeoSoft" class="sponsor-logo" href="https://seosoft.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="SeoSoft" decoding="async" loading="lazy" src="images/sponsors/Seosoft.jpg"/>
+<span>SeoSoft</span>
+</a><a aria-label="Besøg Regnskab og Co." class="sponsor-logo" href="https://regnskabogco.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Regnskab og Co." decoding="async" loading="lazy" src="images/sponsors/Regnskab og co.jfif"/>
+<span>Regnskab og Co.</span>
+</a><a aria-label="Besøg GK-Tømrer v/Gunner Knudsen" class="sponsor-logo" href="https://www.xn--gk-tmrer-84a.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="GK-Tømrer v/Gunner Knudsen" decoding="async" loading="lazy" src="images/sponsors/GK Toemrer.jpg"/>
+<span>GK-Tømrer v/Gunner Knudsen</span>
+</a><a aria-label="Besøg Combi Tools" class="sponsor-logo" href="https://www.combitools.dk/da/" rel="noopener noreferrer" target="_blank">
+<img alt="Combi Tools" decoding="async" loading="lazy" src="images/sponsors/Combi Tools.png"/>
+<span>Combi Tools</span>
+</a><a aria-label="Besøg US Design" class="sponsor-logo" href="https://us-design.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="US Design" decoding="async" loading="lazy" src="images/sponsors/US Design.png"/>
+<span>US Design</span>
+</a><a aria-label="Besøg Brahms-Smeden" class="sponsor-logo" href="https://brahms-smeden.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Brahms-Smeden" decoding="async" loading="lazy" src="images/sponsors/Brahms Smeden.png"/>
+<span>Brahms-Smeden</span>
+</a><a aria-label="Besøg Kolding Gårdbryggeri" class="sponsor-logo" href="https://koldinggaardbryggeri.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Kolding Gårdbryggeri" decoding="async" loading="lazy" src="images/sponsors/Kolding Gaardbryggeri.jpg"/>
+<span>Kolding Gårdbryggeri</span>
+</a><a aria-label="Besøg Andersen og Heegaard" class="sponsor-logo" href="https://aogh.net/" rel="noopener noreferrer" target="_blank">
+<img alt="Andersen og Heegaard" decoding="async" loading="lazy" src="images/sponsors/Andersen &amp; Heegaard.jpg"/>
+<span>Andersen og Heegaard</span>
+</a><div aria-label="Lokale Landmænd" class="sponsor-logo">
+<img alt="Lokale Landmænd" decoding="async" loading="lazy" src="images/sponsors/Lokale Landmaend.PNG"/>
+<span>Lokale Landmænd</span>
+</div><a aria-label="Besøg Presenco Sport" class="sponsor-logo" href="https://www.presencosport.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Presenco Sport" decoding="async" loading="lazy" src="images/sponsors/Presenco Sport.jpg"/>
+<span>Presenco Sport</span>
+</a><a aria-label="Besøg Borlev Auto Teknik" class="sponsor-logo" href="https://www.facebook.com/p/Borlev-Auto-Teknik-61564027601106/" rel="noopener noreferrer" target="_blank">
+<img alt="Presenco Sport" decoding="async" loading="lazy" src="images/sponsors/Borlev Auto Teknik.PNG"/>
+<span>Borlev Auto Teknik</span>
+</a><a aria-label="Besøg Spar Nord" class="sponsor-logo" href="https://www.sparnord.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Spar Nord" decoding="async" loading="lazy" src="images/sponsors/Spar Nord.png"/>
+<span>Spar Nord</span>
+</a><a aria-label="Besøg byRavn" class="sponsor-logo" href="https://www.byravn.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="ByRavn" decoding="async" loading="lazy" src="images/sponsors/ByRavn.png"/>
+<span>byRavn</span>
+</a><a aria-label="Besøg meplant" class="sponsor-logo" href="https://www.instagram.com/meplant_dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Meplant" decoding="async" loading="lazy" src="images/sponsors/MePlant.png"/>
+<span>meplant</span>
+</a><a aria-label="Besøg Sydjysk Sparekasse" class="sponsor-logo" href="https://www.sydjysksparekasse.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Sydjysk Sparekasse" decoding="async" loading="lazy" src="images/sponsors/SydjyskSparekasse.png"/>
+<span>Sydjysk Sparekasse</span>
+</a><a aria-label="Besøg Alfa Laval" class="sponsor-logo" href="https://www.alfalaval.dk/" rel="noopener noreferrer" target="_blank">
+<img alt="Alfa Laval" decoding="async" loading="lazy" src="images/sponsors/Alfa Laval.webp"/>
+<span>Alfa Laval</span>
+</a><div aria-label="Fallesen Maskiner" class="sponsor-logo">
+<img alt="Fallesen Maskiner" decoding="async" loading="lazy" src="images/sponsors/Fallesen Maskiner.png"/>
+<span>Fallesen Maskiner</span>
+</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="ticker-help">Hold musen over for at pause · Klik på en sponsor for at besøge deres side · Træk for at navigere</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="/" class="footer-brand">
+        <img src="images/logo/fynslund.png" alt="Fynslund Logo">
+        <span>
+          <strong>Fynslund BK Håndbold</strong>
+          <small>Serie 2 Herrer · Sæson 2026</small>
+        </span>
+      </a>
+
+      <a href="#top" class="back-to-top">↑ Rul til toppen</a>
+    </div>
+  </footer>
+
+  <script src="s2h.js" defer></script>
+</body>
+</html>
